@@ -5,23 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Landscape OS 使用指南</title>
+    <link rel="stylesheet" href="style/styles.v2.css">
+    <title>Landscape Office 使用指南</title>
 </head>
 <style>
     *{
         margin: 0;
         padding: 0;
-    }
-
-    .tutorial_wrapper {
-        display: flex;
-        flex-direction: column;
-        background-color: #2c3e50;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
     }
 
     .tutorial_welcome{
@@ -47,48 +37,16 @@
         color: aliceblue;
         text-align: center;
     }
-
-    .tutorial_button{
-        display: block;
-        outline: none;
-        background-color: rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(.5vw);
-        cursor: pointer;
-        padding: 1vh 5vw;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
-        color: aliceblue;
-        font-size: 1.5vw;
-        font-weight: 800;
-        width: 30vw
-    }
-
-    .tutorial_box{
-        color: tomato;
-        font-size: 1vw;
-        display: none;
-    }
 </style>
 <body>
-    <div class="tutorial_wrapper">
-        <div class="tutorial_welcome">欢迎您购买和使用由思创科技研发的挖掘机辅助使用系统</div>
-        <div class="tutorial_contents">
-            <div style="display: flex; justify-content: center">
-                <button class="tutorial_button">开始使用</button>
-                <div class="tutorial_box">等待编写</div>
-            </div>
+<div class="mWrapper mFlexColumn">
+    <div class="tutorial_welcome">欢迎您购买和使用由思创科技研发的挖掘机辅助使用系统</div>
+    <div class="tutorial_contents">
+        <div style="display: flex; justify-content: center">
+            <button class="mButton"><a class="mAnchorTransformText" href="html/viewer.html">开始使用</a></button>
         </div>
-        <div class="tutorial_footer">&copy; 2022 Sichuang Tech. <br /> 保留所有权利</div>
     </div>
+    <div class="tutorial_footer">&copy; 2022 Sichuang Tech. <br /> 保留所有权利</div>
+</div>
 </body>
 </html>
-
-<script>
-
-    document.getElementsByClassName('tutorial_button')[0].addEventListener('click', () => {
-        document.getElementsByClassName('tutorial_box')[0].style.display = 'block'
-        document.getElementsByClassName('tutorial_button')[0].style.display = 'none'
-    })
-
-</script>
